@@ -30,4 +30,9 @@ class TasksController extends Controller
 
         return redirect('/')->with('status', 'Task Created Successfully');
     }
+
+    public function edit ($id) {
+        $task = Task::findOrFail($id);
+        return view('tasks.edit', compact('task'));
+    }
 }

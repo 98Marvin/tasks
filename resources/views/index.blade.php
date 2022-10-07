@@ -37,7 +37,7 @@
                                                         <span class="badge badge-complete">{{ $task->status }}</span>
                                                     </td>
                                                     <td>
-                                                        <span class="badge badge-complete">Edit</span>
+                                                        <span class="badge badge-warning"><a class="text-white" href="{{ route('tasks.edit', $task->id) }}">Edit</a></span>
                                                     </td>
                                                 </tr>
                                             @endforeach
